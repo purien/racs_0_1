@@ -1,0 +1,31 @@
+rm server*.*
+rm client*.*
+
+# Making a Client Certificate
+# ===========================
+
+# Build the Request
+# =================
+openssl  req  -newkey rsa:1024 -sha1 -keyout ./clientkey.pem -out ./clientreq.pem -config ./config_client.cnf -reqexts req_extensions
+
+# Issuing the client certificate
+# ==============================
+openssl  x509 -days 3000 -req -in ./clientreq.pem -sha1 -extfile ./config_client.cnf -extensions certificate_extensions -passin pass:pascal -CA ./root.pem -CAkey ./root.pem -CAcreateserial -out ./clientcert.pem
+
+cat ./clientcert.pem  ./clientkey.pem ./rootcert.pem  >> ./client.pem
+ 
+openssl  req  -newkey rsa:1024 -sha1 -keyout ./serverkey.pem -out ./serverreq.pem -config ./config_server.cnf -reqexts req_extensions
+
+# Issuing the server certificate
+# ==============================
+openssl  x509 -days 3000 -req -in serverreq.pem -sha1 -extfile ./config_server.cnf -extensions certificate_extensions -passin pass:pascal -CA ./root.pem -CAkey ./root.pem -CAcreateserial -out ./servercert.pem
+
+cat  ./servercert.pem ./serverkey.pem ./rootcert.pem  >> ./server.pem
+
+
+
+
+
+
+
+
