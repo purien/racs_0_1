@@ -1,0 +1,15 @@
+//////////////////////////////////
+***********asterix.txt***********
+/////////////////////////////////
+
+
+// AID or default      no=White_List yes=Black_List #SN  list_of_SN
+
+
+A00000000101           no 3 pascal:nokey.txt client:nopin.txt admin:nokey.txt 
+A000000003000000       no 3 pascal client admin 
+default                no 2 pascal admin        
+
+
+// AID no listed are accessed according to the se_default_access attribute
+// defined in the config.txt file(yes=access, no=access denied)

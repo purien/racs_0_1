@@ -1,0 +1,13 @@
+//////////////////////////////////
+***********paycard.txt***********
+/////////////////////////////////
+
+
+// AID or default               no=White_List yes=Black_List #SN  list_of_SN
+
+325041592E5359532E4444463031  no  3 pascal client admin
+A0000000041010                no  3 pascal client admin
+default                       no  3 pascal client admin
+
+// AID no listed are accessed according to the se_default_access attribute
+// defined in the config.txt file(yes=access, no=access denied)

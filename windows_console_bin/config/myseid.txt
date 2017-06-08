@@ -1,0 +1,13 @@
+//////////////////////////////////
+**************myseid**************
+/////////////////////////////////
+
+
+// AID or default               no=White_List yes=Black_List #SN  list_of_SN
+
+
+default                no 3 pascal admin client       
+
+
+// AID no listed are accessed according to the se_default_access attribute
+// defined in the config.txt file(yes=access, no=access denied)
