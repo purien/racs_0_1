@@ -45,7 +45,7 @@ is_external_grid     no
 racs_verbose         yes
 
 /////////////////////////
-secure_element_index no
+secure_element_index yes
 /////////////////////////
 
 reader_verbose yes
