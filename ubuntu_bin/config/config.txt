@@ -2,10 +2,10 @@
 ***********Configuration File*****************
 //////////////////////////////////////////////
 
-ca_file   ./../cert/rootcert.pem
-ca_dir    ./../
-cert_file ./../cert/servercert.pem
-key_file  ./../cert/serverkey.pem
+ca_file   ./cert/rootcert.pem
+ca_dir    ./
+cert_file ./cert/servercert.pem
+key_file  ./cert/serverkey.pem
 password  pascal
 //cipher_list  ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH
 cipher_list    ALL:!ADH:!LOW:!EXP:@STRENGTH
@@ -45,7 +45,7 @@ is_external_grid     no
 racs_verbose         yes
 
 /////////////////////////
-secure_element_index no
+secure_element_index yes
 /////////////////////////
 
 reader_verbose yes
