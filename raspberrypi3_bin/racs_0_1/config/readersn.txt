@@ -1,0 +1,9 @@
+21120837203028 paycard
+0123456789ABCD myseid
+//21121142217439 paycard "SDI011 Contactless Reader"
+//21121142217439 paycard "SDI011 Smart Card Reader"
+
+
+
+
+ 

@@ -1,0 +1,88 @@
+//////////////////////////////////////////////
+***********Configuration File*****************
+//////////////////////////////////////////////
+
+ca_file   ./../cert/rootcert.pem
+ca_dir    ./../
+cert_file ./../cert/servercert.pem
+key_file  ./../cert/serverkey.pem
+password  pascal
+//cipher_list  ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH
+cipher_list    ALL:!ADH:!LOW:!EXP:@STRENGTH
+server_port    0.0.0.0:7777
+
+
+// Each CommonName (CN)  has a UserID (integer)
+// UserID is allowed from the UserTable
+
+// A CN not referenced in the users.txt file has no access to any SE
+
+autostart yes
+
+start_delay  0       (ms)
+
+cache_dir ./cache/   (default ./)
+
+trace_dir ./trace/   (default ./)
+
+
+// CN that are not referenced in SEID table (SEID.txt) default access to embedded AID in SE (yes - no)
+// or no SEID.txt file
+
+se_default_access yes
+
+// List only authorized SEID (default = no)
+restricted_seid_list yes
+
+grid_server      gridserver.com
+grid_port        51503
+grid_board       7
+grid_first_slot  25
+grid_max_slots   1 
+
+is_external_grid     no
+
+racs_verbose         yes
+
+///////////////////////////
+secure_element_index no
+//////////////////////////
+
+reader_verbose yes
+
+reader_console yes
+
+system_console yes
+
+
+// Blue Green Red
+bg_color   0066FF    //FFFFFF
+pen_color  FFFFFF    //000000
+font_size  18
+line_size  140
+
+ 
+close_session_console yes
+close_session_delay   5000 (in ms)
+session_console_tile  yes
+
+racs_log  yes
+
+
+// Zone TLS
+cache_enable    yes
+cache_timeout   180
+cache_nb_digits 64   // max=64
+cache_for_ever  no
+
+
+
+
+
+
+
+
+
+
+
+

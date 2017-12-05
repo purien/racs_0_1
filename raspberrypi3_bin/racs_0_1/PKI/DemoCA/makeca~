@@ -1,0 +1,4 @@
+rm ./root*.*
+openssl req -config openssl.cnf -x509 -newkey rsa:1024 -sha1 -out ./rootcert.pem -outform PEM -keyform PEM -nodes -keyout ./rootkey.pem -days 3000 -extensions CA_ROOT
+openssl x509 -in ./rootcert.pem -inform PEM -out ./root.der -outform DER
+cat ./rootcert.pem  ./rootkey.pem  >> ./root.pem

@@ -1,0 +1,18 @@
+//
+pascal   4 0 999 myseid paycard
+
+client   4 0 999 myseid paycard
+
+client2  2 10 20
+
+Client3  1 30
+
+Client4  all
+
+admin    all
+
+
+
+
+
+
