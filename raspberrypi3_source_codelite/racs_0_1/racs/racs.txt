@@ -1,0 +1,1 @@
+./Release/common2.c.o ./Release/grid.c.o ./Release/pcsc.c.o ./Release/pcscemulator.c.o ./Release/reentrant2.c.o ./Release/server6.c.o ./Release/windowglue.c.o ./Release/main.c.o
